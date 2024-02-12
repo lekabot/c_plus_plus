@@ -188,3 +188,27 @@ S21Matrix S21Matrix::InverseMatrix() {
     res.MulNumber(1.0 / determinant);
     return res;
 }
+
+S21Matrix S21Matrix::operator+(const S21Matrix& other) const {
+    S21Matrix result(*this);
+    result.SumMatrix(other);
+    return result;
+}
+
+S21Matrix S21Matrix::operator-(const S21Matrix& other) const {
+    S21Matrix result(*this);
+    result.SubMatrix(other);
+    return result;
+}
+
+S21Matrix S21Matrix::operator*(const S21Matrix& other) const {
+    S21Matrix result(*this);
+    result.MulMatrix(other);
+    return result;
+}
+
+S21Matrix S21Matrix::operator*(const double number) const {
+    S21Matrix result(*this);
+    result.MulNumber(number);
+    return result;
+}
