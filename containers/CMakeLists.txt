@@ -12,7 +12,32 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(tests tests/main_tests.cpp)
+add_executable(tests
+        tests/list_tests/core_tests.cpp
+        tests/list_tests/init_tests.cpp
+        tests/list_tests/operation_tests.cpp
+
+        tests/map_tests/core_tests.cpp
+        tests/map_tests/init_tests.cpp
+        tests/map_tests/operation_tests.cpp
+
+        tests/queue_tests/core_tests.cpp
+        tests/queue_tests/init_tests.cpp
+        tests/queue_tests/operation_tests.cpp
+
+        tests/set_tests/core_tests.cpp
+        tests/set_tests/init_tests.cpp
+        tests/set_tests/operation_tests.cpp
+
+        tests/stack_tests/core_tests.cpp
+        tests/stack_tests/init_tests.cpp
+        tests/stack_tests/operation_tests.cpp
+
+        tests/vector_tests/core_tests.cpp
+        tests/vector_tests/init_tests.cpp
+        tests/vector_tests/operation_tests.cpp
+
+        tests/main_tests.cpp)
 
 add_library(s21_containers
         containers/list/s21_list.cpp
