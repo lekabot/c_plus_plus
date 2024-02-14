@@ -7,12 +7,12 @@ set(CMAKE_CXX_COMPILER g++)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(tests
+add_executable(test
         tests/list_tests/core_tests.cpp
         tests/list_tests/init_tests.cpp
         tests/list_tests/operation_tests.cpp
@@ -51,4 +51,6 @@ add_library(s21_containers
 
 target_include_directories(s21_containers PUBLIC containers)
 
-target_link_libraries(tests PRIVATE s21_containers ${GTEST_LIBRARIES} pthread)
+target_link_libraries(test PRIVATE s21_containers ${GTEST_LIBRARIES} pthread)
+
+add_custom_target(clean-all COMMAND ${CMAKE_COMMAND} -P ${CMAKE_SOURCE_DIR}/CleanAll.cmake)
