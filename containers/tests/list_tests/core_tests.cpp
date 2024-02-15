@@ -1,3 +1,5 @@
-//
-// Created by Ilya Lopatin on 2/14/24.
-//
+#include "../main_tests.h"
+
+TEST(AlwaysTrueTest, AlwaysTrue) {
+ASSERT_TRUE(true);
+}
