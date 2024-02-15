@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="debug" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="all" run_configuration_type="CLionNativeAppRunConfigurationType" />
+    </method>
+  </configuration>
+</component>
