@@ -69,277 +69,323 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
+CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o: tests/deque_tests/core_tests.cpp
+CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/core_tests.cpp
+
+CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/core_tests.cpp > CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.i
+
+CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.s
+
+CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o: tests/deque_tests/init_tests.cpp
+CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/init_tests.cpp
+
+CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/init_tests.cpp > CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.i
+
+CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.s
+
+CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o: tests/deque_tests/operation_tests.cpp
+CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/operation_tests.cpp
+
+CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.i
+
+CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/deque_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.s
+
 CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o: tests/list_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp > CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp > CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o: tests/list_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp > CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp > CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o: tests/list_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/list_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.s
+
+CMakeFiles/test.dir/tests/main.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/tests/main.cpp.o: tests/main.cpp
+CMakeFiles/test.dir/tests/main.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/tests/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/main.cpp.o -MF CMakeFiles/test.dir/tests/main.cpp.o.d -o CMakeFiles/test.dir/tests/main.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/main.cpp
+
+CMakeFiles/test.dir/tests/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/main.cpp > CMakeFiles/test.dir/tests/main.cpp.i
+
+CMakeFiles/test.dir/tests/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/main.cpp -o CMakeFiles/test.dir/tests/main.cpp.s
 
 CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o: tests/map_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp > CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp > CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o: tests/map_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp > CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp > CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o: tests/map_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/map_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.s
 
 CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o: tests/queue_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o: tests/queue_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o: tests/queue_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/queue_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/queue_tests/operation_tests.cpp.s
 
 CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o: tests/set_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp > CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp > CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o: tests/set_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp > CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp > CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o: tests/set_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/set_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/set_tests/operation_tests.cpp.s
 
 CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o: tests/stack_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o: tests/stack_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o: tests/stack_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/stack_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.s
 
 CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o: tests/vector_tests/core_tests.cpp
 CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp
 
 CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.i
 
 CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/core_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.s
 
 CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o: tests/vector_tests/init_tests.cpp
 CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp
 
 CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.i
 
 CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/init_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.s
 
 CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o: tests/vector_tests/operation_tests.cpp
 CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o -MF CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o.d -o CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp
 
 CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp > CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.i
 
 CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.s
-
-CMakeFiles/test.dir/tests/main_tests.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/tests/main_tests.cpp.o: tests/main_tests.cpp
-CMakeFiles/test.dir/tests/main_tests.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/test.dir/tests/main_tests.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/tests/main_tests.cpp.o -MF CMakeFiles/test.dir/tests/main_tests.cpp.o.d -o CMakeFiles/test.dir/tests/main_tests.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/tests/main_tests.cpp
-
-CMakeFiles/test.dir/tests/main_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/tests/main_tests.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/tests/main_tests.cpp > CMakeFiles/test.dir/tests/main_tests.cpp.i
-
-CMakeFiles/test.dir/tests/main_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/tests/main_tests.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/main_tests.cpp -o CMakeFiles/test.dir/tests/main_tests.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/tests/vector_tests/operation_tests.cpp -o CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
+"CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o" \
+"CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o" \
+"CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o" \
+"CMakeFiles/test.dir/tests/main.cpp.o" \
 "CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o" \
@@ -354,15 +400,18 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o" \
 "CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o" \
-"CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o" \
-"CMakeFiles/test.dir/tests/main_tests.cpp.o"
+"CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
+test: CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o
+test: CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o
+test: CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o
 test: CMakeFiles/test.dir/tests/list_tests/core_tests.cpp.o
 test: CMakeFiles/test.dir/tests/list_tests/init_tests.cpp.o
 test: CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.o
+test: CMakeFiles/test.dir/tests/main.cpp.o
 test: CMakeFiles/test.dir/tests/map_tests/core_tests.cpp.o
 test: CMakeFiles/test.dir/tests/map_tests/init_tests.cpp.o
 test: CMakeFiles/test.dir/tests/map_tests/operation_tests.cpp.o
@@ -378,12 +427,11 @@ test: CMakeFiles/test.dir/tests/stack_tests/operation_tests.cpp.o
 test: CMakeFiles/test.dir/tests/vector_tests/core_tests.cpp.o
 test: CMakeFiles/test.dir/tests/vector_tests/init_tests.cpp.o
 test: CMakeFiles/test.dir/tests/vector_tests/operation_tests.cpp.o
-test: CMakeFiles/test.dir/tests/main_tests.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: libs21_containers.a
 test: /usr/local/lib/libgtest.a
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
 # Target rules for targets named s21_containers
 
 # Build rule for target.
@@ -143,6 +130,19 @@ s21_containers/fast:
 .PHONY : s21_containers/fast
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named clean-all
 
 # Build rule for target.
@@ -154,6 +154,30 @@ clean-all: cmake_check_build_system
 clean-all/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean-all.dir/build.make CMakeFiles/clean-all.dir/build
 .PHONY : clean-all/fast
+
+containers/deque/deque.o: containers/deque/deque.cpp.o
+.PHONY : containers/deque/deque.o
+
+# target to build an object file
+containers/deque/deque.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o
+.PHONY : containers/deque/deque.cpp.o
+
+containers/deque/deque.i: containers/deque/deque.cpp.i
+.PHONY : containers/deque/deque.i
+
+# target to preprocess a source file
+containers/deque/deque.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.i
+.PHONY : containers/deque/deque.cpp.i
+
+containers/deque/deque.s: containers/deque/deque.cpp.s
+.PHONY : containers/deque/deque.s
+
+# target to generate assembly for a file
+containers/deque/deque.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.s
+.PHONY : containers/deque/deque.cpp.s
 
 containers/list/s21_list.o: containers/list/s21_list.cpp.o
 .PHONY : containers/list/s21_list.o
@@ -299,6 +323,126 @@ containers/vector/s21_vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s
 .PHONY : containers/vector/s21_vector.cpp.s
 
+iterators/const_iterator.o: iterators/const_iterator.cpp.o
+.PHONY : iterators/const_iterator.o
+
+# target to build an object file
+iterators/const_iterator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o
+.PHONY : iterators/const_iterator.cpp.o
+
+iterators/const_iterator.i: iterators/const_iterator.cpp.i
+.PHONY : iterators/const_iterator.i
+
+# target to preprocess a source file
+iterators/const_iterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.i
+.PHONY : iterators/const_iterator.cpp.i
+
+iterators/const_iterator.s: iterators/const_iterator.cpp.s
+.PHONY : iterators/const_iterator.s
+
+# target to generate assembly for a file
+iterators/const_iterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.s
+.PHONY : iterators/const_iterator.cpp.s
+
+iterators/iterator.o: iterators/iterator.cpp.o
+.PHONY : iterators/iterator.o
+
+# target to build an object file
+iterators/iterator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o
+.PHONY : iterators/iterator.cpp.o
+
+iterators/iterator.i: iterators/iterator.cpp.i
+.PHONY : iterators/iterator.i
+
+# target to preprocess a source file
+iterators/iterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/iterator.cpp.i
+.PHONY : iterators/iterator.cpp.i
+
+iterators/iterator.s: iterators/iterator.cpp.s
+.PHONY : iterators/iterator.s
+
+# target to generate assembly for a file
+iterators/iterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/iterators/iterator.cpp.s
+.PHONY : iterators/iterator.cpp.s
+
+tests/deque_tests/core_tests.o: tests/deque_tests/core_tests.cpp.o
+.PHONY : tests/deque_tests/core_tests.o
+
+# target to build an object file
+tests/deque_tests/core_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.o
+.PHONY : tests/deque_tests/core_tests.cpp.o
+
+tests/deque_tests/core_tests.i: tests/deque_tests/core_tests.cpp.i
+.PHONY : tests/deque_tests/core_tests.i
+
+# target to preprocess a source file
+tests/deque_tests/core_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.i
+.PHONY : tests/deque_tests/core_tests.cpp.i
+
+tests/deque_tests/core_tests.s: tests/deque_tests/core_tests.cpp.s
+.PHONY : tests/deque_tests/core_tests.s
+
+# target to generate assembly for a file
+tests/deque_tests/core_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/core_tests.cpp.s
+.PHONY : tests/deque_tests/core_tests.cpp.s
+
+tests/deque_tests/init_tests.o: tests/deque_tests/init_tests.cpp.o
+.PHONY : tests/deque_tests/init_tests.o
+
+# target to build an object file
+tests/deque_tests/init_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.o
+.PHONY : tests/deque_tests/init_tests.cpp.o
+
+tests/deque_tests/init_tests.i: tests/deque_tests/init_tests.cpp.i
+.PHONY : tests/deque_tests/init_tests.i
+
+# target to preprocess a source file
+tests/deque_tests/init_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.i
+.PHONY : tests/deque_tests/init_tests.cpp.i
+
+tests/deque_tests/init_tests.s: tests/deque_tests/init_tests.cpp.s
+.PHONY : tests/deque_tests/init_tests.s
+
+# target to generate assembly for a file
+tests/deque_tests/init_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/init_tests.cpp.s
+.PHONY : tests/deque_tests/init_tests.cpp.s
+
+tests/deque_tests/operation_tests.o: tests/deque_tests/operation_tests.cpp.o
+.PHONY : tests/deque_tests/operation_tests.o
+
+# target to build an object file
+tests/deque_tests/operation_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.o
+.PHONY : tests/deque_tests/operation_tests.cpp.o
+
+tests/deque_tests/operation_tests.i: tests/deque_tests/operation_tests.cpp.i
+.PHONY : tests/deque_tests/operation_tests.i
+
+# target to preprocess a source file
+tests/deque_tests/operation_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.i
+.PHONY : tests/deque_tests/operation_tests.cpp.i
+
+tests/deque_tests/operation_tests.s: tests/deque_tests/operation_tests.cpp.s
+.PHONY : tests/deque_tests/operation_tests.s
+
+# target to generate assembly for a file
+tests/deque_tests/operation_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/deque_tests/operation_tests.cpp.s
+.PHONY : tests/deque_tests/operation_tests.cpp.s
+
 tests/list_tests/core_tests.o: tests/list_tests/core_tests.cpp.o
 .PHONY : tests/list_tests/core_tests.o
 
@@ -371,29 +515,29 @@ tests/list_tests/operation_tests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/list_tests/operation_tests.cpp.s
 .PHONY : tests/list_tests/operation_tests.cpp.s
 
-tests/main_tests.o: tests/main_tests.cpp.o
-.PHONY : tests/main_tests.o
+tests/main.o: tests/main.cpp.o
+.PHONY : tests/main.o
 
 # target to build an object file
-tests/main_tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main_tests.cpp.o
-.PHONY : tests/main_tests.cpp.o
+tests/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main.cpp.o
+.PHONY : tests/main.cpp.o
 
-tests/main_tests.i: tests/main_tests.cpp.i
-.PHONY : tests/main_tests.i
+tests/main.i: tests/main.cpp.i
+.PHONY : tests/main.i
 
 # target to preprocess a source file
-tests/main_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main_tests.cpp.i
-.PHONY : tests/main_tests.cpp.i
+tests/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main.cpp.i
+.PHONY : tests/main.cpp.i
 
-tests/main_tests.s: tests/main_tests.cpp.s
-.PHONY : tests/main_tests.s
+tests/main.s: tests/main.cpp.s
+.PHONY : tests/main.s
 
 # target to generate assembly for a file
-tests/main_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main_tests.cpp.s
-.PHONY : tests/main_tests.cpp.s
+tests/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/main.cpp.s
+.PHONY : tests/main.cpp.s
 
 tests/map_tests/core_tests.o: tests/map_tests/core_tests.cpp.o
 .PHONY : tests/map_tests/core_tests.o
@@ -766,6 +910,9 @@ help:
 	@echo "... clean-all"
 	@echo "... s21_containers"
 	@echo "... test"
+	@echo "... containers/deque/deque.o"
+	@echo "... containers/deque/deque.i"
+	@echo "... containers/deque/deque.s"
 	@echo "... containers/list/s21_list.o"
 	@echo "... containers/list/s21_list.i"
 	@echo "... containers/list/s21_list.s"
@@ -784,6 +931,21 @@ help:
 	@echo "... containers/vector/s21_vector.o"
 	@echo "... containers/vector/s21_vector.i"
 	@echo "... containers/vector/s21_vector.s"
+	@echo "... iterators/const_iterator.o"
+	@echo "... iterators/const_iterator.i"
+	@echo "... iterators/const_iterator.s"
+	@echo "... iterators/iterator.o"
+	@echo "... iterators/iterator.i"
+	@echo "... iterators/iterator.s"
+	@echo "... tests/deque_tests/core_tests.o"
+	@echo "... tests/deque_tests/core_tests.i"
+	@echo "... tests/deque_tests/core_tests.s"
+	@echo "... tests/deque_tests/init_tests.o"
+	@echo "... tests/deque_tests/init_tests.i"
+	@echo "... tests/deque_tests/init_tests.s"
+	@echo "... tests/deque_tests/operation_tests.o"
+	@echo "... tests/deque_tests/operation_tests.i"
+	@echo "... tests/deque_tests/operation_tests.s"
 	@echo "... tests/list_tests/core_tests.o"
 	@echo "... tests/list_tests/core_tests.i"
 	@echo "... tests/list_tests/core_tests.s"
@@ -793,9 +955,9 @@ help:
 	@echo "... tests/list_tests/operation_tests.o"
 	@echo "... tests/list_tests/operation_tests.i"
 	@echo "... tests/list_tests/operation_tests.s"
-	@echo "... tests/main_tests.o"
-	@echo "... tests/main_tests.i"
-	@echo "... tests/main_tests.s"
+	@echo "... tests/main.o"
+	@echo "... tests/main.i"
+	@echo "... tests/main.s"
 	@echo "... tests/map_tests/core_tests.o"
 	@echo "... tests/map_tests/core_tests.i"
 	@echo "... tests/map_tests/core_tests.s"

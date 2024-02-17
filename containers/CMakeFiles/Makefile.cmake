@@ -61,7 +61,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/s21_containers.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/clean-all.dir/DependInfo.cmake"
   )

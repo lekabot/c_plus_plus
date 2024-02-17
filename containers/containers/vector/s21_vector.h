@@ -5,10 +5,6 @@
 #ifndef CONTAINERS_VECTOR_H
 #define CONTAINERS_VECTOR_H
 
+class vector {};
 
-class vector {
-
-};
-
-
-#endif //CONTAINERS_VECTOR_H
+#endif  // CONTAINERS_VECTOR_H
