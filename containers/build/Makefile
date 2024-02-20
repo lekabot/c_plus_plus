@@ -155,77 +155,53 @@ clean-all/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean-all.dir/build.make CMakeFiles/clean-all.dir/build
 .PHONY : clean-all/fast
 
-containers/deque/deque.o: containers/deque/deque.cpp.o
-.PHONY : containers/deque/deque.o
+containers/list/list.o: containers/list/list.cpp.o
+.PHONY : containers/list/list.o
 
 # target to build an object file
-containers/deque/deque.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o
-.PHONY : containers/deque/deque.cpp.o
+containers/list/list.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/list.cpp.o
+.PHONY : containers/list/list.cpp.o
 
-containers/deque/deque.i: containers/deque/deque.cpp.i
-.PHONY : containers/deque/deque.i
+containers/list/list.i: containers/list/list.cpp.i
+.PHONY : containers/list/list.i
 
 # target to preprocess a source file
-containers/deque/deque.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.i
-.PHONY : containers/deque/deque.cpp.i
+containers/list/list.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/list.cpp.i
+.PHONY : containers/list/list.cpp.i
 
-containers/deque/deque.s: containers/deque/deque.cpp.s
-.PHONY : containers/deque/deque.s
+containers/list/list.s: containers/list/list.cpp.s
+.PHONY : containers/list/list.s
 
 # target to generate assembly for a file
-containers/deque/deque.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.s
-.PHONY : containers/deque/deque.cpp.s
+containers/list/list.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/list.cpp.s
+.PHONY : containers/list/list.cpp.s
 
-containers/list/s21_list.o: containers/list/s21_list.cpp.o
-.PHONY : containers/list/s21_list.o
+containers/map/map.o: containers/map/map.cpp.o
+.PHONY : containers/map/map.o
 
 # target to build an object file
-containers/list/s21_list.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o
-.PHONY : containers/list/s21_list.cpp.o
+containers/map/map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/map.cpp.o
+.PHONY : containers/map/map.cpp.o
 
-containers/list/s21_list.i: containers/list/s21_list.cpp.i
-.PHONY : containers/list/s21_list.i
-
-# target to preprocess a source file
-containers/list/s21_list.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i
-.PHONY : containers/list/s21_list.cpp.i
-
-containers/list/s21_list.s: containers/list/s21_list.cpp.s
-.PHONY : containers/list/s21_list.s
-
-# target to generate assembly for a file
-containers/list/s21_list.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s
-.PHONY : containers/list/s21_list.cpp.s
-
-containers/map/s21_map.o: containers/map/s21_map.cpp.o
-.PHONY : containers/map/s21_map.o
-
-# target to build an object file
-containers/map/s21_map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o
-.PHONY : containers/map/s21_map.cpp.o
-
-containers/map/s21_map.i: containers/map/s21_map.cpp.i
-.PHONY : containers/map/s21_map.i
+containers/map/map.i: containers/map/map.cpp.i
+.PHONY : containers/map/map.i
 
 # target to preprocess a source file
-containers/map/s21_map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i
-.PHONY : containers/map/s21_map.cpp.i
+containers/map/map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/map.cpp.i
+.PHONY : containers/map/map.cpp.i
 
-containers/map/s21_map.s: containers/map/s21_map.cpp.s
-.PHONY : containers/map/s21_map.s
+containers/map/map.s: containers/map/map.cpp.s
+.PHONY : containers/map/map.s
 
 # target to generate assembly for a file
-containers/map/s21_map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s
-.PHONY : containers/map/s21_map.cpp.s
+containers/map/map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/map/map.cpp.s
+.PHONY : containers/map/map.cpp.s
 
 containers/queue/s21_queue.o: containers/queue/s21_queue.cpp.o
 .PHONY : containers/queue/s21_queue.o
@@ -275,53 +251,53 @@ containers/set/s21_set.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s
 .PHONY : containers/set/s21_set.cpp.s
 
-containers/stack/s21_stack.o: containers/stack/s21_stack.cpp.o
-.PHONY : containers/stack/s21_stack.o
+containers/stack/stack.o: containers/stack/stack.cpp.o
+.PHONY : containers/stack/stack.o
 
 # target to build an object file
-containers/stack/s21_stack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o
-.PHONY : containers/stack/s21_stack.cpp.o
+containers/stack/stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o
+.PHONY : containers/stack/stack.cpp.o
 
-containers/stack/s21_stack.i: containers/stack/s21_stack.cpp.i
-.PHONY : containers/stack/s21_stack.i
+containers/stack/stack.i: containers/stack/stack.cpp.i
+.PHONY : containers/stack/stack.i
 
 # target to preprocess a source file
-containers/stack/s21_stack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i
-.PHONY : containers/stack/s21_stack.cpp.i
+containers/stack/stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i
+.PHONY : containers/stack/stack.cpp.i
 
-containers/stack/s21_stack.s: containers/stack/s21_stack.cpp.s
-.PHONY : containers/stack/s21_stack.s
+containers/stack/stack.s: containers/stack/stack.cpp.s
+.PHONY : containers/stack/stack.s
 
 # target to generate assembly for a file
-containers/stack/s21_stack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s
-.PHONY : containers/stack/s21_stack.cpp.s
+containers/stack/stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s
+.PHONY : containers/stack/stack.cpp.s
 
-containers/vector/s21_vector.o: containers/vector/s21_vector.cpp.o
-.PHONY : containers/vector/s21_vector.o
+containers/vector/vector.o: containers/vector/vector.cpp.o
+.PHONY : containers/vector/vector.o
 
 # target to build an object file
-containers/vector/s21_vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o
-.PHONY : containers/vector/s21_vector.cpp.o
+containers/vector/vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o
+.PHONY : containers/vector/vector.cpp.o
 
-containers/vector/s21_vector.i: containers/vector/s21_vector.cpp.i
-.PHONY : containers/vector/s21_vector.i
+containers/vector/vector.i: containers/vector/vector.cpp.i
+.PHONY : containers/vector/vector.i
 
 # target to preprocess a source file
-containers/vector/s21_vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i
-.PHONY : containers/vector/s21_vector.cpp.i
+containers/vector/vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i
+.PHONY : containers/vector/vector.cpp.i
 
-containers/vector/s21_vector.s: containers/vector/s21_vector.cpp.s
-.PHONY : containers/vector/s21_vector.s
+containers/vector/vector.s: containers/vector/vector.cpp.s
+.PHONY : containers/vector/vector.s
 
 # target to generate assembly for a file
-containers/vector/s21_vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s
-.PHONY : containers/vector/s21_vector.cpp.s
+containers/vector/vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21_containers.dir/build.make CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s
+.PHONY : containers/vector/vector.cpp.s
 
 iterators/const_iterator.o: iterators/const_iterator.cpp.o
 .PHONY : iterators/const_iterator.o
@@ -910,27 +886,24 @@ help:
 	@echo "... clean-all"
 	@echo "... s21_containers"
 	@echo "... test"
-	@echo "... containers/deque/deque.o"
-	@echo "... containers/deque/deque.i"
-	@echo "... containers/deque/deque.s"
-	@echo "... containers/list/s21_list.o"
-	@echo "... containers/list/s21_list.i"
-	@echo "... containers/list/s21_list.s"
-	@echo "... containers/map/s21_map.o"
-	@echo "... containers/map/s21_map.i"
-	@echo "... containers/map/s21_map.s"
+	@echo "... containers/list/list.o"
+	@echo "... containers/list/list.i"
+	@echo "... containers/list/list.s"
+	@echo "... containers/map/map.o"
+	@echo "... containers/map/map.i"
+	@echo "... containers/map/map.s"
 	@echo "... containers/queue/s21_queue.o"
 	@echo "... containers/queue/s21_queue.i"
 	@echo "... containers/queue/s21_queue.s"
 	@echo "... containers/set/s21_set.o"
 	@echo "... containers/set/s21_set.i"
 	@echo "... containers/set/s21_set.s"
-	@echo "... containers/stack/s21_stack.o"
-	@echo "... containers/stack/s21_stack.i"
-	@echo "... containers/stack/s21_stack.s"
-	@echo "... containers/vector/s21_vector.o"
-	@echo "... containers/vector/s21_vector.i"
-	@echo "... containers/vector/s21_vector.s"
+	@echo "... containers/stack/stack.o"
+	@echo "... containers/stack/stack.i"
+	@echo "... containers/stack/stack.s"
+	@echo "... containers/vector/vector.o"
+	@echo "... containers/vector/vector.i"
+	@echo "... containers/vector/vector.s"
 	@echo "... iterators/const_iterator.o"
 	@echo "... iterators/const_iterator.i"
 	@echo "... iterators/const_iterator.s"

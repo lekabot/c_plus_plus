@@ -8,13 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/kandice/Desktop/c_plus_plus/containers/containers/deque/deque.cpp" "CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o.d"
-  "/Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp" "CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o.d"
-  "/Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp" "CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o.d"
+  "/Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp" "CMakeFiles/s21_containers.dir/containers/list/list.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/list/list.cpp.o.d"
+  "/Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp" "CMakeFiles/s21_containers.dir/containers/map/map.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/map/map.cpp.o.d"
   "/Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp" "CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o.d"
   "/Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp" "CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o.d"
-  "/Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp" "CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o.d"
-  "/Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp" "CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o.d"
+  "/Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp" "CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o.d"
+  "/Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp" "CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o.d"
   "/Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp" "CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o.d"
   "/Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp" "CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o" "gcc" "CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o.d"
   )

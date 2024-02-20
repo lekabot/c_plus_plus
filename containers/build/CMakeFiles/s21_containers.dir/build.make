@@ -69,52 +69,38 @@ include CMakeFiles/s21_containers.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/s21_containers.dir/flags.make
 
-CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/deque/deque.cpp
-CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o -MF CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/deque/deque.cpp
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s21_containers.dir/containers/list/list.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/list/list.cpp.o -MF CMakeFiles/s21_containers.dir/containers/list/list.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/list/list.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp
 
-CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/deque/deque.cpp > CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.i
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/list/list.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp > CMakeFiles/s21_containers.dir/containers/list/list.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/deque/deque.cpp -o CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.s
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/list/list.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp -o CMakeFiles/s21_containers.dir/containers/list/list.cpp.s
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o -MF CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s21_containers.dir/containers/map/map.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/map/map.cpp.o -MF CMakeFiles/s21_containers.dir/containers/map/map.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/map/map.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp > CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/map/map.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp > CMakeFiles/s21_containers.dir/containers/map/map.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp -o CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s
-
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o -MF CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp
-
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp > CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i
-
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp -o CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/map/map.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp -o CMakeFiles/s21_containers.dir/containers/map/map.cpp.s
 
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: CMakeFiles/s21_containers.dir/flags.make
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -MF CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp
 
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.s: cmake_force
 CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/flags.make
 CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp
 CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -MF CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp
 
 CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i: cmake_force
@@ -139,38 +125,38 @@ CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s
 
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o -MF CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o -MF CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp
 
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp > CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp > CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp -o CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp -o CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s
 
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o -MF CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o -MF CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp
 
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp > CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp > CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s"
-	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp -o CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp -o CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s
 
 CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: CMakeFiles/s21_containers.dir/flags.make
 CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp
 CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o -MF CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o.d -o CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp
 
 CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.s: cmake_force
 CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: CMakeFiles/s21_containers.dir/flags.make
 CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: /Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp
 CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o -MF CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o.d -o CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp
 
 CMakeFiles/s21_containers.dir/iterators/iterator.cpp.i: cmake_force
@@ -197,31 +183,29 @@ CMakeFiles/s21_containers.dir/iterators/iterator.cpp.s: cmake_force
 
 # Object files for target s21_containers
 s21_containers_OBJECTS = \
-"CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/list/list.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/map/map.cpp.o" \
 "CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o" \
 "CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o" \
 "CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o" \
 "CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o"
 
 # External object files for target s21_containers
 s21_containers_EXTERNAL_OBJECTS =
 
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/deque/deque.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/list/list.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/map/map.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/build.make
 libs21_containers.a: CMakeFiles/s21_containers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libs21_containers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libs21_containers.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/s21_containers.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/s21_containers.dir/link.txt --verbose=$(VERBOSE)
 
