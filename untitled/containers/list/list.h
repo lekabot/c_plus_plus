@@ -24,6 +24,7 @@ namespace s21 {
         list(const list &other) = default;
         list(list &&other) noexcept = default;
         ~list() = default;
+        list<T>& operator=(list<T> &&l)  noexcept;
 
         const_reference front() const { return head->data; }
         const_reference back() const { return tails->data; }
@@ -49,7 +50,7 @@ namespace s21 {
         void splice(const_iterator pos, list &other);
         void reverse();
         void unique();
-        void sort();
+//        void sort();
 
     private:
         Node<value_type> *head, *tails;

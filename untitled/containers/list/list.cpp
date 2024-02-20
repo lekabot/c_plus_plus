@@ -2,6 +2,21 @@
 
 namespace s21 {
 
+    template <class T>
+    list<T>& list<T>::operator=(list<T> &&l)  noexcept {
+        if (l != nullptr) {
+            clear();
+            head = l.head;
+            tails = l.tails;
+            list_size = l.list_size;
+
+            l.head = nullptr;
+            l.tails = nullptr;
+            l.list_size = 0;
+        }
+        return *this;
+    }
+
     template<class T>
     void list<T>::clear() {
         while (list_size) {
