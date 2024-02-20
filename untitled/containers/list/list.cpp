@@ -10,6 +10,52 @@ namespace s21 {
     }
 
     template<class T>
+    typename list<T>::iterator list<T>::insert(list::iterator pos, list::const_reference value) {
+        auto new_node = new Node<T>(value);
+        if (pos == end()) {
+            if (empty()) {
+                head = tails = new_node;
+            } else {
+                tails->next = new_node;
+                new_node->prev = tails;
+                tails = new_node;
+            }
+        } else {
+            auto current = pos.current;
+            if (current == head) {
+                new_node->next = head;
+                head->prev = new_node;
+                head = new_node;
+            } else {
+                auto prev_node = current->prev;
+                prev_node->next = new_node;
+                new_node->prev = prev_node;
+                new_node->next = current;
+                current->prev = new_node;
+            }
+        }
+        ++list_size;
+        return iterator(new_node);
+    }
+
+    template<class T>
+    void list<T>::erase(list::iterator pos) {
+        if (pos == end() || empty()) { return; }
+        if (pos == begin()) {pop_front();}
+        if (pos == iterator(tails)) {pop_back();}
+        else {
+            auto node_to_remove = pos.current;
+            auto prev_node = node_to_remove->prev;
+            auto next_node = node_to_remove->next;
+            prev_node->next = next_node;
+            next_node->prev = prev_node;
+            delete node_to_remove;
+            --list_size;
+        }
+    }
+
+
+    template<class T>
     void list<T>::push_back(list::const_reference value) {
         auto new_node = new Node<value_type>(value);
         if (!head) {
@@ -76,8 +122,51 @@ namespace s21 {
         std::swap(list_size, other.list_size);
     }
 
-//    template <class T>
-//    void list<T>::merge(list<T> &other) {}
+    template <class T>
+    void list<T>::merge(list<T> &other) {
+        iterator it1 = begin();
+        iterator it2 = other.begin();
+        iterator end1 = end();
+        iterator end2 = end();
+
+        while (it1 != end1 && it2 != end2) {
+            if (*it2 < *it1) {
+                insert(it1, *it2);
+                ++it2;
+            } else {
+                ++it1;
+            }
+        }
+        while (it2 != end2) {
+            push_back(*it2);
+            ++it2;
+        }
+        other.clear();
+    }
+
+    template <class T>
+    void list<T>::splice(list::const_iterator pos, list<T> &other) {
+        if (other.empty()) {
+            return;
+        }
+        if (this == &other) { return;}
+        auto splice_start = other.head;
+        auto splice_end = other.tails;
+        auto splice_size = other.size();
+
+        other.head = other.tails = nullptr;
+        other.list_size = 0;
+
+        Node<T>* insert_before = pos.current;
+
+        if (insert_before == nullptr) {
+            if (empty()) {
+                head = splice_start;
+            }
+        }
+
+    }
+
 
     template <class T>
     void list<T>::reverse() {
@@ -123,5 +212,7 @@ namespace s21 {
 //        if (head == nullptr || head->next == nullptr) {
 //            return;
 //        }
+//
+//
 //    }
-}
+//}

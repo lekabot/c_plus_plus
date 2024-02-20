@@ -4,7 +4,9 @@
 #include <cstdio>
 #include <initializer_list>
 #include <limits>
-#include "node.h"
+#include "../node/node.h"
+#include "../iterators/ListIterator.h"
+#include "../iterators/ListConstIterator.h"
 
 namespace s21 {
     template <class T>
@@ -26,28 +28,28 @@ namespace s21 {
         const_reference front() const { return head->data; }
         const_reference back() const { return tails->data; }
 
-//        iterator begin() { return iterator(head); }
-//        iterator end() { return iterator(nullptr); }
-//        const_iterator begin() const { return const_iterator(head); }
-//        const_iterator end() const { return const_iterator(nullptr); }
+        iterator begin() { return iterator(head); }
+        iterator end() { return iterator(nullptr); }
+        const_iterator begin() const { return const_iterator(head); }
+        const_iterator end() const { return const_iterator(nullptr); }
 
         [[nodiscard]] bool empty() const { return list_size == 0; }
         [[nodiscard]] size_type size() const { return list_size; }
         [[nodiscard]] size_type max_size() const { return std::numeric_limits<size_type>::max(); }
 
         void clear();
-//        iterator insert(iterator pos, const_reference value);
-//        void erase(iterator pos);
+        iterator insert(iterator pos, const_reference value);
+        void erase(iterator pos);
         void push_back(const_reference value);
         void pop_back();
         void push_front(const_reference value);
         void pop_front();
         void swap(list &other);
-//        void merge(list &other);
-//        void splice(const_iterator pos, list &other);
+        void merge(list &other);
+        void splice(const_iterator pos, list &other);
         void reverse();
         void unique();
-//        void sort();
+        void sort();
 
     private:
         Node<value_type> *head, *tails;
