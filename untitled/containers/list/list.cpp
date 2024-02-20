@@ -41,8 +41,8 @@ namespace s21 {
     template<class T>
     void list<T>::erase(list::iterator pos) {
         if (pos == end() || empty()) { return; }
-        if (pos == begin()) {pop_front();}
-        if (pos == iterator(tails)) {pop_back();}
+        if (pos == begin()) { pop_front(); }
+        if (pos == iterator(tails)) { pop_back(); }
         else {
             auto node_to_remove = pos.current;
             auto prev_node = node_to_remove->prev;
@@ -98,7 +98,7 @@ namespace s21 {
         ++list_size;
     }
 
-    template <class T>
+    template<class T>
     void list<T>::pop_front() {
         if (list_size == 0) {
             return;
@@ -115,14 +115,14 @@ namespace s21 {
         --list_size;
     }
 
-    template <class T>
+    template<class T>
     void list<T>::swap(list<T> &other) {
         std::swap(head, other.head);
         std::swap(tails, other.tails);
         std::swap(list_size, other.list_size);
     }
 
-    template <class T>
+    template<class T>
     void list<T>::merge(list<T> &other) {
         iterator it1 = begin();
         iterator it2 = other.begin();
@@ -144,12 +144,12 @@ namespace s21 {
         other.clear();
     }
 
-    template <class T>
+    template<class T>
     void list<T>::splice(list::const_iterator pos, list<T> &other) {
         if (other.empty()) {
             return;
         }
-        if (this == &other) { return;}
+        if (this == &other) { return; }
         auto splice_start = other.head;
         auto splice_end = other.tails;
         auto splice_size = other.size();
@@ -157,18 +157,32 @@ namespace s21 {
         other.head = other.tails = nullptr;
         other.list_size = 0;
 
-        Node<T>* insert_before = pos.current;
+        Node<T> *insert_before = pos.current;
 
         if (insert_before == nullptr) {
             if (empty()) {
                 head = splice_start;
+            } else {
+                tails->next = splice_start;
+                splice_start->prev = tails;
             }
+            tails = splice_end;
+        } else {
+            auto insert_after = insert_before->prev;
+            if (insert_after == nullptr) {
+                head = splice_start;
+            } else {
+                insert_after->next = splice_start;
+                splice_start->prev = insert_after;
+            }
+            splice_end->next = insert_before;
+            insert_before->prev = splice_end;
         }
-
+        list_size += splice_size;
     }
 
 
-    template <class T>
+    template<class T>
     void list<T>::reverse() {
         if (list_size <= 1) {
             return;
@@ -189,7 +203,7 @@ namespace s21 {
         head = prevNode;
     }
 
-    template <class T>
+    template<class T>
     void list<T>::unique() {
         if (head == nullptr || head->next == nullptr) {
             return;
@@ -207,6 +221,7 @@ namespace s21 {
         }
     }
 
+    // для этой функции нужен вектор
 //    template <class T>
 //    void list<T>::sort() {
 //        if (head == nullptr || head->next == nullptr) {
@@ -215,4 +230,4 @@ namespace s21 {
 //
 //
 //    }
-//}
+}
