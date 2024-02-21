@@ -1,10 +1,7 @@
-#include "vector.h"
-
 namespace s21 {
-
     template<class T>
     void vector<T>::ReAlloc(vector::size_type newCapacity) {
-        auto* newBlock = new T[newCapacity];
+        T* newBlock = new T[newCapacity];
 
         if(newCapacity < m_Size) {
             m_Size = newCapacity;
@@ -19,13 +16,11 @@ namespace s21 {
     }
 
     template<class T>
-    vector<T>::vector() {
-        ReAlloc(2);
-    }
+    vector<T>::vector() : m_Data(nullptr), m_Size(0), m_Capacity(0) {}
 
     template<class T>
-    vector<T>::vector(size_type n) {
-        ReAlloc(n);
+    vector<T>::vector(size_type n) : m_Data(new value_type[n]), m_Size(n), m_Capacity(n) {
+        std::fill_n(m_Data, n, value_type());
     }
 
     template<class T>
@@ -44,7 +39,7 @@ namespace s21 {
     }
 
     template<class T>
-    typename vector<T>::size_type vector<T>::capacity() {
+    typename vector<T>::size_type vector<T>::capacity() const {
         return m_Capacity;
     }
 
@@ -130,7 +125,7 @@ namespace s21 {
     }
 
     template<class T>
-    typename vector<T>::size_type vector<T>::size() {
+    typename vector<T>::size_type vector<T>::size() const {
         return m_Size;
     }
 
@@ -152,8 +147,8 @@ namespace s21 {
 
     template<class T>
     typename vector<T>::const_reference vector<T>::front() const {
-        if (empty()) {
-            throw std::out_of_range("Vector is empty");
+        if (!m_Size) {
+            throw std::out_of_range("FrontError: vector is empty");
         }
         return m_Data[0];
     }
@@ -163,11 +158,12 @@ namespace s21 {
         return m_Data;
     }
 
-    template<class T>
+    template <typename T>
     typename vector<T>::const_reference vector<T>::back() const {
-        if (empty()) {
-            throw std::out_of_range("Vector is empty");
+        if (!m_Size) {
+            throw std::out_of_range("BackError: vector is empty");
         }
+
         return m_Data[m_Size - 1];
     }
 
@@ -209,7 +205,7 @@ namespace s21 {
     }
 
     template<class T>
-    bool vector<T>::empty() {
+    bool vector<T>::empty() const {
         return m_Size == 0;
     }
 
@@ -219,4 +215,39 @@ namespace s21 {
             pop_back();
         }
     }
-}
+
+    template<class T>
+    void vector<T>::erase(vector::iterator pos) {
+        if (pos < begin() || pos >= end()) {
+            return;
+        }
+
+        size_type index = pos - begin();
+
+        for (size_type i = index; i < m_Size - 1; ++i) {
+            m_Data[i] = m_Data[i+1];
+        }
+
+        m_Size--;
+    }
+
+    template<class T>
+    typename vector<T>::iterator vector<T>::insert(vector::iterator pos, vector::const_reference value) {
+        if (pos < begin() || pos > end()) { // Changed from >= to >
+            throw std::out_of_range("InsertError: The insertion position is out of range of the vector memory");
+        }
+        auto index = pos - begin();
+
+        if (m_Size >= m_Capacity) {
+            ReAlloc(m_Capacity * 2);
+        }
+
+        for (auto i = m_Size; i > index; --i) {
+            m_Data[i] = m_Data[i - 1];
+        }
+        m_Data[index] = value;
+        ++m_Size;
+
+        return begin() + index;
+    }
+} // namespace s21

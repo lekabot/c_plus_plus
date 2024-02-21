@@ -1,11 +1,9 @@
 #ifndef UNTITLED_VECTOR_H
 #define UNTITLED_VECTOR_H
 
-#include <vector>
+#include <algorithm>
 #include <cstdio>
 #include <initializer_list>
-#include "../iterators/VectorIterator.h"
-#include "../iterators/VectorConstIterator.h"
 
 namespace s21 {
     template <class T>
@@ -14,8 +12,8 @@ namespace s21 {
         using value_type = T;
         using reference = T &;
         using const_reference = const T &;
-        using iterator = VectorIterator<T>;
-        using const_iterator = VectorConstIterator<T>;
+        using iterator = T*;
+        using const_iterator = const T *;
         using size_type = size_t;
 
         vector();
@@ -35,18 +33,20 @@ namespace s21 {
 
         iterator begin() {return iterator(&m_Data[0]); }
         iterator end() {return iterator(&m_Data[m_Size]); }
+        const_iterator cbegin() const noexcept { return m_Data; }
+        const_iterator cend() const noexcept { return m_Data + m_Size; }
 
-        bool empty();
-        size_type size();
-        [[nodiscard]] size_type max_size() const {return std::numeric_limits<size_type>::max();}
+        bool empty() const;
+        size_type size() const;
+        size_type max_size() const {return std::numeric_limits<size_type>::max();}
         void reserve(size_type size);
-        size_type capacity();
+        size_type capacity() const;
         void shrink_to_fit();
 
 
         void clear();
-//        iterator insert(iterator pos, const_reference value);
-//        void erase(iterator pos);
+        iterator insert(iterator pos, const_reference value);
+        void erase(iterator pos);
         void push_back(const_reference value);
         void pop_back();
         void swap(vector& other);
@@ -61,5 +61,6 @@ namespace s21 {
         size_type m_Capacity = 0;
     };
 }
+#include "vector.tpp"
 
 #endif //UNTITLED_VECTOR_H
