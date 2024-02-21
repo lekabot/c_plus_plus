@@ -1,21 +1,6 @@
-//#include "list.h"
-//
 //namespace s21 {
-//
 //    template <class T>
-//    list<T>& list<T>::operator=(list<T> &&l)  noexcept {
-//        if (l != nullptr) {
-//            clear();
-//            head = l.head;
-//            tails = l.tails;
-//            list_size = l.list_size;
-//
-//            l.head = nullptr;
-//            l.tails = nullptr;
-//            l.list_size = 0;
-//        }
-//        return *this;
-//    }
+//    list<T>& list<T>::operator=(list<T> &&l)  noexcept
 //
 //    template<class T>
 //    void list<T>::clear() {
@@ -24,7 +9,7 @@
 //        }
 //    }
 //
-//    template<class T>
+////    template<class T>
 //    typename list<T>::iterator list<T>::insert(list::iterator pos, list::const_reference value) {
 //        auto new_node = new Node<T>(value);
 //        if (pos == end()) {
@@ -53,7 +38,7 @@
 //        return iterator(new_node);
 //    }
 //
-//    template<class T>
+////    template<class T>
 //    void list<T>::erase(list::iterator pos) {
 //        if (pos == end() || empty()) { return; }
 //        if (pos == begin()) { pop_front(); }
@@ -137,7 +122,7 @@
 //        std::swap(list_size, other.list_size);
 //    }
 //
-//    template<class T>
+////    template<class T>
 //    void list<T>::merge(list<T> &other) {
 //        iterator it1 = begin();
 //        iterator it2 = other.begin();
@@ -159,7 +144,7 @@
 //        other.clear();
 //    }
 //
-//    template<class T>
+////    template<class T>
 //    void list<T>::splice(list::const_iterator pos, list<T> &other) {
 //        if (other.empty()) {
 //            return;
@@ -235,14 +220,4 @@
 //            }
 //        }
 //    }
-//
-//    // для этой функции нужен вектор
-////    template <class T>
-////    void list<T>::sort() {
-////        if (head == nullptr || head->next == nullptr) {
-////            return;
-////        }
-////
-////
-////    }
-//}
+//} // namespace s21

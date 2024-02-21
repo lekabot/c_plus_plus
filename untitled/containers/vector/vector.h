@@ -60,7 +60,7 @@ namespace s21 {
         size_type m_Size = 0;
         size_type m_Capacity = 0;
     };
-}
+} // namespace s21
 #include "vector.tpp"
 
 #endif //UNTITLED_VECTOR_H

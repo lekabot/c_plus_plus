@@ -39,7 +39,7 @@ TEST(VectorTest, InitializerListConstructor_NonEmptyList) {
 
 TEST(VectorTest, CopyConstructor_EmptyVector) {
     s21::vector<int> v1;
-    s21::vector<int> v2(v1);
+    const s21::vector<int>& v2(v1);
     EXPECT_TRUE(v2.empty());
     EXPECT_EQ(v2.size(), 0);
 }
