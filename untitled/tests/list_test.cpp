@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main_tests.h"
 
 TEST(List, Constructor_Default) {
 s21::list<int> our_list;

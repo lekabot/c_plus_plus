@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main_tests.h"
 
 TEST(VectorTest, DefaultConstructor_EmptyVector) {
     s21::vector<int> v;
