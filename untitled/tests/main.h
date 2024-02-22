@@ -3,6 +3,7 @@
 
 #include <gtest/gtest.h>
 #include <iostream>
+#include <list>
 #include "../containers.h"
 
 int main(int argc, char **argv);

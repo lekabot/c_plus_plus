@@ -19,13 +19,13 @@ EXPECT_EQ(our_list.front(), std_list.front());
 EXPECT_EQ(our_list.back(), std_list.back());
 }
 
-//TEST(List, Constructor_Copy) {
-//s21::list<int> our_list = {1, 2, 3};
-//std::list<int> std_list = {1, 2, 3};
-//s21::list<int> our_copy(our_list);
-//std::list<int> std_copy(std_list);
-//EXPECT_EQ(our_copy.front(), std_copy.front());
-//EXPECT_EQ(our_copy.back(), std_copy.back());
+TEST(List, Constructor_Copy) {
+s21::list<int> our_list = {1, 2, 3};
+std::list<int> std_list = {1, 2, 3};
+s21::list<int> our_copy(our_list);
+std::list<int> std_copy(std_list);
+EXPECT_EQ(our_copy.front(), std_copy.front());
+EXPECT_EQ(our_copy.back(), std_copy.back());
 }
 
 TEST(List, Operator_Copy) {

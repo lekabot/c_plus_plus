@@ -3,18 +3,21 @@
 
 #include <iterator>
 #include "../node/node.h"
+#include "../list/list.h"
 
 namespace s21 {
     template <class T>
     class ListIterator {
+//        friend class s21::list<T>;
     public:
+
         using iterator_category = std::forward_iterator_tag;
         using difference_type = std::ptrdiff_t;
         using pointer = T*;
         using reference = T&;
 
         ListIterator() : ListIterator() {}
-        explicit ListIterator(Node<T>* node) : current(node) {}
+        ListIterator(Node<T>* node) : current(node) {}
         ListIterator(const ListIterator& other) : current(other.current) {}
 
         virtual reference operator*() const { return current->data; }
@@ -30,7 +33,7 @@ namespace s21 {
         bool operator>(const ListIterator& other) const { return *this > other; }
         bool operator>=(const ListIterator& other) const { return *this >= other; }
 
-    private:
+    protected:
         Node<T>* current;
     };
 }
