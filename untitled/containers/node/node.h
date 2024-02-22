@@ -7,7 +7,8 @@ namespace s21 {
         T data;
         Node* prev;
         Node* next;
-        explicit Node(const T& value) : data(value), prev(nullptr), next(nullptr) {}
+//        Node() : next(nullptr), prev(nullptr) {}
+        Node(const T& value) : data(value), prev(nullptr), next(nullptr) {}
     };
 }
 

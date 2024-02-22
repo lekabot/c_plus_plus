@@ -1,7 +1,6 @@
 #ifndef UNTITLED_LIST_H
 #define UNTITLED_LIST_H
 
-//#include <list>
 #include <cstdio>
 #include <initializer_list>
 #include <limits>
@@ -13,35 +12,80 @@ namespace s21 {
     template <class T>
     class list {
     public:
-        friend class ListIterator<T>;
-        friend class ListConstIterator<T>;
-
         using value_type = T;
         using reference = T &;
         using const_reference = const T &;
-        using iterator = ListIterator<T>;
-        using const_iterator = ListConstIterator<T>;
         using size_type = size_t;
+
+        class ListIterator {
+            friend class s21::list<T>;
+        public:
+            using iterator_category = std::forward_iterator_tag;
+            using difference_type = std::ptrdiff_t;
+            using pointer = T*;
+            using reference = T&;
+
+            ListIterator() : current(nullptr) {}
+            ListIterator(Node<T>* node) : current(node) {}
+            ListIterator(const ListIterator& other) : current(other.current) {}
+            ListIterator(Node<T>* node, Node<T>* last_node) : current(node), last(last_node) {}
+
+            reference operator*() const { return current->data; }
+            pointer operator->() const { return &(current->data); }
+            ListIterator& operator++() { current = current->next; return *this; }
+            ListIterator operator++(int) { ListIterator temp = *this; ++(*this); return temp; }
+            ListIterator& operator--() {
+                if (current) {
+                    current = current->prev;
+                } else {
+                    current = last;
+                }
+                return *this;
+            }
+            ListIterator operator--(int) { ListIterator temp = *this; --(*this); return temp; }
+            bool operator==(const ListIterator& other) const { return current == other.current; }
+            bool operator!=(const ListIterator& other) const { return current != other.current; }
+            bool operator<(const ListIterator& other) const { return current < other.current; }
+            bool operator<=(const ListIterator& other) const { return current <= other.current; }
+            bool operator>(const ListIterator& other) const { return current > other.current; }
+            bool operator>=(const ListIterator& other) const { return current >= other.current; }
+
+        protected:
+            Node<T>* current;
+            Node<T>* last;
+        };
+
+        class ListConstIterator : public ListIterator {
+        public:
+            ListConstIterator() : ListIterator() {}
+            ListConstIterator(const ListIterator &node_) : ListIterator(node_) {}
+            typename ListIterator::reference operator*() const {
+                return ListIterator::operator*();
+            }
+        };
+
+        using iterator = ListIterator;
+        using const_iterator = ListConstIterator;
 
         list() : head(nullptr), tails(nullptr), list_size(0) {}
 
         list(size_type n) : list() {
-            if (n > 0) {
-                for (size_type i = 0; i < n; ++i) {
-                    push_front(value_type());
-                }
+            for (size_type i = 0; i < n; ++i) {
+                push_front(value_type());
             }
         }
 
         list(std::initializer_list<value_type> const &items) : list() {
-            for (const auto& item : items) {push_back(item);}
+            for (const auto& item : items) {
+                push_back(item);
+            }
         }
 
         list(const list &other) : list() {
             for (auto it = other.begin(); it != other.end(); ++it) {
-              push_back(*it);
-          }
-        };
+                push_back(*it);
+            }
+        }
 
         list(list &&other) noexcept : head(other.head), tails(other.tails), list_size(other.list_size) {
             other.head = nullptr;
@@ -49,14 +93,20 @@ namespace s21 {
             other.list_size = 0;
         }
 
-        ~list() = default;
+        ~list() {
+            clear();
+        }
 
         list<T>& operator=(const list<T>& other) {
             if (this != &other) {
-                clear();
-                for (auto it = other.begin(); it != other.end(); ++it) {
-                      push_back(*it);
-                 }
+                while (!empty()) {
+                    pop_front();
+                }
+                Node<value_type> *current = other.head;
+                while (current) {
+                    push_back(current->data);
+                    current = current->next;
+                }
             }
             return *this;
         }
@@ -75,70 +125,63 @@ namespace s21 {
             return *this;
         }
 
-
         const_reference front() const { return head->data; }
         const_reference back() const { return tails->data; }
 
-        iterator begin() { return iterator(head); }
-        iterator end() { return iterator(nullptr); }
-        const_iterator begin() const { return const_iterator(head); }
-        const_iterator end() const { return const_iterator(nullptr); }
+        iterator begin() const { return iterator(head); }
+        iterator end() const { return ListIterator(tails->next, tails); }
+        const_iterator cbegin() const { return const_iterator(head); }
+        const_iterator cend() const { return const_iterator(nullptr); }
 
         bool empty() const { return list_size == 0; }
         size_type size() const { return list_size; }
         size_type max_size() const { return std::numeric_limits<size_type>::max(); }
 
         void clear() {
-            while (list_size) {
-                pop_back();
+            while (!empty()) {
+                pop_front();
             }
         }
 
         iterator insert(iterator pos, const_reference value) {
-            auto new_node = new Node<T>(value);
-            if (pos == end()) {
-                if (empty()) {
-                    head = tails = new_node;
-                } else {
-                    tails->next = new_node;
-                    new_node->prev = tails;
-                    tails = new_node;
-                }
+            if (pos == begin()) {
+                push_front(value);
+                pos = head;
+            } else if (pos == end()) {
+                push_back(value);
+                pos = tails;
             } else {
-                auto current = pos.current;
-                if (current == head) {
-                    new_node->next = head;
-                    head->prev = new_node;
-                    head = new_node;
-                } else {
-                    auto prev_node = current->prev;
-                    prev_node->next = new_node;
-                    new_node->prev = prev_node;
-                    new_node->next = current;
-                    current->prev = new_node;
-                }
+                Node<T>* current = pos.current;
+                Node<T>* blank = new Node(value);
+                blank->next = current;
+                blank->prev = current->prev;
+                current->prev->next = blank;
+                current->prev = blank;
+                list_size++;
+                return iterator(blank);
             }
-            ++list_size;
-            return iterator(new_node);
+            return pos;
         }
 
         void erase(iterator pos) {
             if (pos == end() || empty()) { return; }
-            if (pos == begin()) { pop_front(); }
-            if (pos == iterator(tails)) { pop_back(); }
-            else {
-                auto node_to_remove = pos.current;
-                auto prev_node = node_to_remove->prev;
-                auto next_node = node_to_remove->next;
-                prev_node->next = next_node;
-                next_node->prev = prev_node;
-                delete node_to_remove;
-                --list_size;
+            Node<T>* current = pos.current;
+            if (current->prev) {
+                current->prev->next = current->next;
+            } else {
+                head = current->next;
             }
+            if (current->next) {
+                current->next->prev = current->prev;
+            } else {
+                tails = current->prev;
+            }
+            delete current;
+            --list_size;
         }
 
         void push_back(const_reference value) {
-            auto new_node = new Node<value_type>(value);
+            Node<T>* new_node = new Node<T>(value);
             if (!head) {
                 head = tails = new_node;
             } else {
@@ -148,25 +191,23 @@ namespace s21 {
             }
             ++list_size;
         }
+
         void pop_back() {
-            if (list_size == 0) {
-                return;
-            }
-            if (list_size == 1) {
-                delete tails;
-                head = tails = nullptr;
+            if (empty()) { return; }
+            Node<T>* temp = tails;
+            if (tails->prev) {
+                tails = tails->prev;
+                tails->next = nullptr;
             } else {
-                Node<value_type> *prev = tails->prev;
-                prev->next = nullptr;
-                delete tails;
-                tails = prev;
+                head = tails = nullptr;
             }
+            delete temp;
             --list_size;
         }
 
         void push_front(const_reference value) {
-            auto new_node = new Node<value_type>(value);
-            if (head == nullptr) {
+            Node<T>* new_node = new Node<T>(value);
+            if (!head) {
                 head = tails = new_node;
             } else {
                 new_node->next = head;
@@ -289,7 +330,20 @@ namespace s21 {
                 }
             }
         }
-//        void sort();
+        void sort() {
+            if (list_size <= 1) {
+                return;
+            }
+
+            for (iterator it1 = begin(); it1 != end(); ++it1) {
+                for (iterator it2 = it1; it2 != end(); ++it2) {
+                    if (*it2 < *it1) {
+                        std::swap(*it1, *it2);
+                    }
+                }
+            }
+        }
+
 
     private:
         Node<value_type> *head, *tails;

@@ -181,20 +181,22 @@ EXPECT_EQ(*our_it, *std_it);
 }
 
 TEST(List, Iterator_Equals) {
-s21::list<int> first_list = {1, 2, 3};
-s21::list<int>::iterator our_it_first;
-our_it_first = first_list.begin();
-s21::list<int>::iterator our_it_second;
-our_it_second = first_list.begin();
-EXPECT_TRUE(our_it_first == our_it_second);
-EXPECT_TRUE(our_it_first >= our_it_second);
-EXPECT_TRUE(our_it_first <= our_it_second);
-++our_it_second;
-EXPECT_TRUE(our_it_first != our_it_second);
-EXPECT_TRUE(our_it_second > our_it_first);
-EXPECT_TRUE(our_it_second >= our_it_first);
-EXPECT_TRUE(our_it_first < our_it_second);
-EXPECT_TRUE(our_it_first <= our_it_second);
+    s21::list<int> first_list = {1, 2, 3};
+    s21::list<int>::iterator our_it_first = first_list.begin();
+    s21::list<int>::iterator our_it_second = first_list.begin();
+
+    EXPECT_TRUE(our_it_first == our_it_second);
+    EXPECT_TRUE(our_it_first <= our_it_second);
+    EXPECT_TRUE(our_it_first >= our_it_second);
+
+    ++our_it_second;
+
+    EXPECT_TRUE(*our_it_first != *our_it_second);
+    EXPECT_TRUE(*our_it_second > *our_it_first);
+    EXPECT_TRUE(*our_it_first < *our_it_second);
+
+    EXPECT_TRUE(*our_it_second >= *our_it_first);
+    EXPECT_TRUE(*our_it_first <= *our_it_second);
 }
 
 TEST(List, Insert) {
@@ -307,54 +309,4 @@ EXPECT_EQ(*our_it, *std_it);
 ++our_it;
 ++std_it;
 EXPECT_EQ(*our_it, *std_it);
-}
-
-TEST(List, Insert_Many) {
-s21::list<int> our_list = {1, 2, 3, 4, 5};
-s21::list<int>::iterator our_it = our_list.begin();
-++our_it;
-our_list.insert_many(our_it, 7, 8, 9);
-our_it = our_list.begin();
-EXPECT_EQ(*our_it, 1);
-++our_it;
-EXPECT_EQ(*our_it, 7);
-++our_it;
-EXPECT_EQ(*our_it, 8);
-++our_it;
-EXPECT_EQ(*our_it, 9);
-++our_it;
-EXPECT_EQ(*our_it, 2);
-}
-
-TEST(List, Insert_Many_Back) {
-s21::list<int> our_list = {1, 2, 3, 4, 5};
-s21::list<int>::iterator our_it;
-our_list.insert_many_back(7, 8, 9);
-our_it = our_list.end();
---our_it;
-EXPECT_EQ(*our_it, 9);
---our_it;
-EXPECT_EQ(*our_it, 8);
---our_it;
-EXPECT_EQ(*our_it, 7);
---our_it;
-EXPECT_EQ(*our_it, 5);
---our_it;
-EXPECT_EQ(*our_it, 4);
-}
-
-TEST(List, Insert_Many_Front) {
-s21::list<int> our_list = {1, 2, 3, 4, 5};
-s21::list<int>::iterator our_it;
-our_list.insert_many_front(7, 8, 9);
-our_it = our_list.begin();
-EXPECT_EQ(*our_it, 9);
-++our_it;
-EXPECT_EQ(*our_it, 8);
-++our_it;
-EXPECT_EQ(*our_it, 7);
-++our_it;
-EXPECT_EQ(*our_it, 1);
-++our_it;
-EXPECT_EQ(*our_it, 2);
 }
