@@ -26,17 +26,19 @@ namespace s21 {
         public:
             Iterator();
             Iterator(TreeNode* node, TreeNode* past_node = nullptr);
+
             iterator& operator++();
             iterator operator++(int);
             iterator& operator--();
             iterator operator--(int);
             reference operator*();
             bool operator==(const iterator& it);
-            friend class tree<key_type, value_type>;
             bool operator!=(const iterator& it);
+            friend class tree<key_type, value_type>;
         protected:
             TreeNode* m_Iter_Node;
             TreeNode* m_Iter_Past_Node;
+            // Infinix
             TreeNode* moveFront(TreeNode* node);
             TreeNode* moveBack(TreeNode* node);
         };
@@ -51,20 +53,21 @@ namespace s21 {
         tree(tree&& other) noexcept;
         ~tree();
 
-//        tree& operator=(tree&& other) noexcept;
-//        tree& operator=(const tree& other);
+        tree& operator=(tree&& other) noexcept;
+        tree& operator=(const tree& other);
 
-//        iterator begin();
-//        iterator end();
+        iterator begin();
+        iterator end();
 
         bool empty();
         size_type size();
         size_type max_size();
         void clear();
-//        std::pair<iterator, bool> insert(const Key& key);
-//        void erase(iterator pos);
+        std::pair<iterator, bool> insert(const Key& key);
+        void erase(iterator pos);
         void swap(tree& other);
-//        void merge(tree& other);
+
+        [[noreturn]] void merge(tree& other);
         bool contains(const Key& key);
 
     protected:
@@ -101,6 +104,7 @@ namespace s21 {
         TreeNode* recursiveDelete(TreeNode *node, key_type key);
         size_type recursiveSize(TreeNode* node);
         TreeNode* binarySearch(TreeNode* node, const Key& key);
+        iterator find(const Key& key);
     };
 
 }

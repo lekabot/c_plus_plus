@@ -176,14 +176,14 @@ namespace s21 {
         bool inserted = false;
         if (key < node->m_Key) {
             if (node->m_Left == nullptr) {
-                auto new_node = new TreeNode(key, value, node);
+                node->m_Left = new TreeNode(key, value, node);
                 inserted = true;
             } else {
                 inserted = recursiveInsert(node->m_Left, key, value);
             }
         } else if (key > node->m_Key) {
             if (node->m_Right == nullptr) {
-                auto new_node = new TreeNode(key, value, node);
+                node->m_Right = new TreeNode(key, value, node);
                 inserted = true;
             } else {
                 inserted = recursiveInsert(node->m_Right, key, value);
@@ -269,5 +269,152 @@ namespace s21 {
     tree<Key, Value>::Iterator::Iterator(tree::TreeNode *node, tree::TreeNode *past_node) : m_Iter_Node(node), m_Iter_Past_Node(past_node) {}
 
     template<class Key, class Value>
-    tree<Key, Value>::Iterator::
+    typename tree<Key, Value>::TreeNode *tree<Key, Value>::Iterator::moveFront(tree::TreeNode *node) {
+        if (node->m_Right != nullptr) {
+            return getMin(node->m_Right);
+        }
+        auto parent = node->m_Parent;
+        while (parent != nullptr && node == parent->m_Right) {
+            node = parent;
+            parent = parent->m_Parent;
+        }
+        return parent;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::TreeNode *tree<Key, Value>::Iterator::moveBack(tree::TreeNode *node) {
+        if (node->m_Left != nullptr) {
+            return GetMax(node->m_Left);
+        }
+        auto *parent = node->m_Parent;
+        while (parent != nullptr && node == parent->m_Left) {
+            node = parent;
+            parent = node->m_Parent;
+        }
+        return parent;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator &tree<Key, Value>::Iterator::operator++() {
+        TreeNode* tmp;
+        if (m_Iter_Node != nullptr) {
+            tmp = getMax(m_Iter_Node);
+        }
+        m_Iter_Node = moveFront(m_Iter_Node);
+        if (m_Iter_Node == nullptr) {
+            m_Iter_Past_Node = tmp;
+        }
+        return *this;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator tree<Key, Value>::Iterator::operator++(int) {
+        auto tmp = *this;
+        operator++();
+        return tmp;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator &tree<Key, Value>::Iterator::operator--() {
+        if (m_Iter_Node == nullptr && m_Iter_Past_Node != nullptr) {
+            *this = m_Iter_Past_Node;
+        }
+        m_Iter_Node = moveBack(m_Iter_Node);
+        return *this;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator tree<Key, Value>::Iterator::operator--(int) {
+        auto tmp = *this;
+        operator--();
+        return tmp;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::reference tree<Key, Value>::Iterator::operator*() {
+        if (m_Iter_Node == nullptr) {
+            static Value fake_value{};
+            return fake_value;
+        }
+        return m_Iter_Node->m_Key;
+    }
+
+    template<class Key, class Value>
+    bool tree<Key, Value>::Iterator::operator==(const tree::iterator &it) {
+        return this->m_Iter_Node == it.m_Iter_Node;
+    }
+
+    template<class Key, class Value>
+    bool tree<Key, Value>::Iterator::operator!=(const tree::iterator &it) {
+        return this->m_Iter_Node != it.m_Iter_Node;
+    }
+
+    template<class Key, class Value>
+    tree<Key, Value> &tree<Key, Value>::operator=(const tree<Key, Value> &other) {
+        if (this != &other) {
+            m_Root = copyTree(other.m_Root, nullptr);
+        }
+        return *this;
+    }
+
+    template<class Key, class Value>
+    tree<Key, Value> &tree<Key, Value>::operator=(tree<Key, Value> &&other) noexcept {
+        if (&other != nullptr) {
+            this->m_Root = other.m_Root;
+            other.m_Root = nullptr;
+        }
+        return *this;
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator tree<Key, Value>::begin() {
+        return Iterator(getMin(m_Root));
+    }
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator tree<Key, Value>::end() {
+        if (m_Root == nullptr) return begin();
+
+        auto last_node = getMax(m_Root);
+        Iterator test(nullptr, last_node);
+        return test;
+    }
+
+    template<class Key, class Value>
+    void tree<Key, Value>::merge(tree<Key, Value> &other) {
+        tree const_tree(other);
+
+        for (auto it = const_tree.begin(); it != const_tree.end(); ++it) {
+            std::pair<Iterator, bool>pr = insert(*it);
+            if (pr.second) other.erase(pr.first);
+        }
+    }
+
+
+    template<class Key, class Value>
+    typename tree<Key, Value>::iterator tree<Key, Value>::find(const Key &key) {
+        auto element = binarySearch(m_Root, key);
+        return element;
+    }
+
+    template<class Key, class Value>
+    std::pair<typename tree<Key, Value>::iterator, bool> tree<Key, Value>::insert(const Key &key) {
+        std::pair<Iterator, bool> result;
+        if (m_Root == nullptr) {
+            m_Root = new TreeNode(key, key);
+            result.first = Iterator(m_Root);
+            result.second = true;
+        } else {
+            bool check_insert = recursiveInsert(m_Root, key, key);
+            result.first = find(key);
+            result.second = check_insert;
+        }
+        return result;
+    }
+
+    template<class Key, class Value>
+    void tree<Key, Value>::erase(tree::iterator pos) {
+        if (m_Root == nullptr || pos.m_Iter_Node == nullptr) return;
+        m_Root = recursiveDelete(m_Root, pos);
+    }
 }
