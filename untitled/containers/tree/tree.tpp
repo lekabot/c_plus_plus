@@ -284,7 +284,7 @@ namespace s21 {
     template<class Key, class Value>
     typename tree<Key, Value>::TreeNode *tree<Key, Value>::Iterator::moveBack(tree::TreeNode *node) {
         if (node->m_Left != nullptr) {
-            return GetMax(node->m_Left);
+            return getMax(node->m_Left);
         }
         auto *parent = node->m_Parent;
         while (parent != nullptr && node == parent->m_Left) {
@@ -415,6 +415,6 @@ namespace s21 {
     template<class Key, class Value>
     void tree<Key, Value>::erase(tree::iterator pos) {
         if (m_Root == nullptr || pos.m_Iter_Node == nullptr) return;
-        m_Root = recursiveDelete(m_Root, pos);
+        m_Root = recursiveDelete(m_Root, *pos);
     }
 }
