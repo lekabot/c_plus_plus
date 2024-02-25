@@ -5,5 +5,6 @@
 #include "containers/list/list.h"
 #include "containers/stack/stack.h"
 #include "containers/queue/queue.h"
+#include "containers/map/map.h"
 
 #endif //CONTAINERS_CONTAINERS_H

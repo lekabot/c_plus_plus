@@ -31,6 +31,7 @@ namespace s21 {
             iterator operator++(int);
             iterator& operator--();
             iterator operator--(int);
+
             reference operator*();
             bool operator==(const iterator& it);
             bool operator!=(const iterator& it);
@@ -57,6 +58,7 @@ namespace s21 {
         tree& operator=(const tree& other);
 
         iterator begin();
+
         iterator end();
 
         bool empty();
@@ -104,6 +106,7 @@ namespace s21 {
         TreeNode* recursiveDelete(TreeNode *node, key_type key);
         size_type recursiveSize(TreeNode* node);
         TreeNode* binarySearch(TreeNode* node, const Key& key);
+
         iterator find(const Key& key);
     };
 

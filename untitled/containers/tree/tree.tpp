@@ -53,9 +53,9 @@ namespace s21 {
 
     template<class Key, class Value>
     typename tree<Key, Value>::TreeNode *tree<Key, Value>::getMin(tree::TreeNode *node) {
-        if (node != nullptr) return nullptr;
+        if (node == nullptr) return nullptr;
         if (node->m_Left == nullptr) return node;
-        return getMax(node->m_Left);
+        return getMin(node->m_Left);
     }
 
     template<class Key, class Value>
@@ -163,7 +163,7 @@ namespace s21 {
 
     template<class Key, class Value>
     typename tree<Key, Value>::TreeNode *tree<Key, Value>::binarySearch(tree::TreeNode *node, const Key &key) {
-        if (node == nullptr || node->m_Key == key) return key;
+        if (node == nullptr || node->m_Key == key) return node;
         if (key > node->m_Key) {
             return binarySearch(node->m_Right, key);
         } else {
