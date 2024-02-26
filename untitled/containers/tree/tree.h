@@ -69,7 +69,7 @@ namespace s21 {
         void erase(iterator pos);
         void swap(tree& other);
 
-        [[noreturn]] void merge(tree& other);
+        void merge(tree& other);
         bool contains(const Key& key);
 
     protected:

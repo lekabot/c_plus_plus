@@ -46,7 +46,7 @@ namespace s21 {
 
     template<class Key, class Value>
     typename tree<Key, Value>::TreeNode *tree<Key, Value>::getMax(tree::TreeNode *node) {
-        if (node != nullptr) return nullptr;
+        if (node == nullptr) return nullptr;
         if (node->m_Right == nullptr) return node;
         return getMax(node->m_Right);
     }
@@ -71,13 +71,15 @@ namespace s21 {
 
     template<class Key, class Value>
     void tree<Key, Value>::autoSetHeight(tree::TreeNode *node) {
-        node->m_Height = std::max(getHeight(node->m_Right), getHeight(node->m_Left)) + 1;
+        node->m_Height = std::max(getHeight(node->m_Left), getHeight(node->m_Right)) + 1;
     }
 
     template<class Key, class Value>
     int tree<Key, Value>::getBalance(tree::TreeNode *node) {
-        return node == nullptr ? 0 : getHeight(node->m_Right) - getHeight(node->m_Left);
-    }
+        return node == nullptr
+               ? 0
+               : getHeight(node->m_Right) -
+                 getHeight(node->m_Left);    }
 
     template<class Key, class Value>
     void tree<Key, Value>::rightRotate(tree::TreeNode *node) {
@@ -139,17 +141,11 @@ namespace s21 {
     void tree<Key, Value>::balance(tree::TreeNode *node) {
         int balance = getBalance(node);
         if (balance == -2) {
-            if (getBalance(node->m_Right) == 1) {
-                leftRotate(node->m_Left);
-            } else {
-                rightRotate(node);
-            }
+            if (getBalance(node->m_Left) == 1) leftRotate(node->m_Left);
+            rightRotate(node);
         } else if (balance == 2) {
-            if (getBalance(node->m_Right) == -1) {
-                rightRotate(node->m_Right);
-            } else {
-                leftRotate(node);
-            }
+            if (getBalance(node->m_Right) == -1) rightRotate(node->m_Right);
+            leftRotate(node);
         }
     }
 
@@ -173,27 +169,27 @@ namespace s21 {
 
     template<class Key, class Value>
     bool tree<Key, Value>::recursiveInsert(tree::TreeNode *node, const Key &key, Value value) {
-        bool inserted = false;
+        bool check_insert = false;
         if (key < node->m_Key) {
             if (node->m_Left == nullptr) {
                 node->m_Left = new TreeNode(key, value, node);
-                inserted = true;
+                check_insert = true;
             } else {
-                inserted = recursiveInsert(node->m_Left, key, value);
+                check_insert = recursiveInsert(node->m_Left, key, value);
             }
         } else if (key > node->m_Key) {
             if (node->m_Right == nullptr) {
                 node->m_Right = new TreeNode(key, value, node);
-                inserted = true;
+                check_insert = true;
             } else {
-                inserted = recursiveInsert(node->m_Right, key, value);
+                check_insert = recursiveInsert(node->m_Right, key, value);
             }
         } else if (key == node->m_Key) {
-            return inserted;
+            return check_insert;
         }
         autoSetHeight(node);
         balance(node);
-        return inserted;
+        return check_insert;
     }
 
     template<class Key, class Value>
@@ -283,6 +279,7 @@ namespace s21 {
 
     template<class Key, class Value>
     typename tree<Key, Value>::TreeNode *tree<Key, Value>::Iterator::moveBack(tree::TreeNode *node) {
+        if (node == nullptr) return nullptr;
         if (node->m_Left != nullptr) {
             return getMax(node->m_Left);
         }
@@ -296,7 +293,7 @@ namespace s21 {
 
     template<class Key, class Value>
     typename tree<Key, Value>::iterator &tree<Key, Value>::Iterator::operator++() {
-        TreeNode* tmp;
+        TreeNode *tmp;
         if (m_Iter_Node != nullptr) {
             tmp = getMax(m_Iter_Node);
         }
@@ -318,6 +315,7 @@ namespace s21 {
     typename tree<Key, Value>::iterator &tree<Key, Value>::Iterator::operator--() {
         if (m_Iter_Node == nullptr && m_Iter_Past_Node != nullptr) {
             *this = m_Iter_Past_Node;
+            return *this;
         }
         m_Iter_Node = moveBack(m_Iter_Node);
         return *this;
@@ -399,17 +397,17 @@ namespace s21 {
 
     template<class Key, class Value>
     std::pair<typename tree<Key, Value>::iterator, bool> tree<Key, Value>::insert(const Key &key) {
-        std::pair<Iterator, bool> result;
+        std::pair<Iterator, bool> return_value;
         if (m_Root == nullptr) {
             m_Root = new TreeNode(key, key);
-            result.first = Iterator(m_Root);
-            result.second = true;
+            return_value.first = Iterator(m_Root);
+            return_value.second = true;
         } else {
             bool check_insert = recursiveInsert(m_Root, key, key);
-            result.first = find(key);
-            result.second = check_insert;
+            return_value.first = find(key);
+            return_value.second = check_insert;
         }
-        return result;
+        return return_value;
     }
 
     template<class Key, class Value>
