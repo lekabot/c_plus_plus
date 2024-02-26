@@ -7,6 +7,7 @@
 namespace s21 {
     template<class T, std::size_t SIZE>
     class array {
+    public:
         using value_type = T;
         using reference = T &;
         using const_reference = const T &;

@@ -7,5 +7,6 @@
 #include "containers/queue/queue.h"
 #include "containers/map/map.h"
 #include "containers/set/set.h"
+#include "containers/array/array.h"
 
 #endif //CONTAINERS_CONTAINERS_H
