@@ -1,0 +1,2 @@
+/usr/bin/ar qc libs21_containers.a CMakeFiles/s21_containers.dir/containers/list/list.cpp.o CMakeFiles/s21_containers.dir/containers/map/map.cpp.o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o
+/usr/bin/ranlib libs21_containers.a

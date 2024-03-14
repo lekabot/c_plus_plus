@@ -3,6 +3,8 @@
 
 #include <gtest/gtest.h>
 
-auto main(int argc, char** argv) -> int;
+#include <iostream>
 
-#endif //CONTAINERS_MAIN_TESTS_H
+int main(int argc, char** argv);
+
+#endif  // CONTAINERS_MAIN_TESTS_H

@@ -69,111 +69,143 @@ include CMakeFiles/s21_containers.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/s21_containers.dir/flags.make
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: containers/list/s21_list.cpp
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o -MF CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: containers/list/list.cpp
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/s21_containers.dir/containers/list/list.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/list/list.cpp.o -MF CMakeFiles/s21_containers.dir/containers/list/list.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/list/list.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp > CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.i
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/list/list.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp > CMakeFiles/s21_containers.dir/containers/list/list.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/list/s21_list.cpp -o CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.s
+CMakeFiles/s21_containers.dir/containers/list/list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/list/list.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/list/list.cpp -o CMakeFiles/s21_containers.dir/containers/list/list.cpp.s
 
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: containers/map/s21_map.cpp
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o -MF CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: containers/map/map.cpp
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/s21_containers.dir/containers/map/map.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/map/map.cpp.o -MF CMakeFiles/s21_containers.dir/containers/map/map.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/map/map.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp
 
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp > CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.i
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/map/map.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp > CMakeFiles/s21_containers.dir/containers/map/map.cpp.i
 
-CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/map/s21_map.cpp -o CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.s
-
-CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: containers/set/s21_set.cpp
-CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -MF CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp
-
-CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp > CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i
-
-CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s
-
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: containers/stack/s21_stack.cpp
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o -MF CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp
-
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp > CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.i
-
-CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/s21_stack.cpp -o CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.s
-
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: CMakeFiles/s21_containers.dir/flags.make
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: containers/vector/s21_vector.cpp
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o -MF CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp
-
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp > CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.i
-
-CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/s21_vector.cpp -o CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.s
+CMakeFiles/s21_containers.dir/containers/map/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/map/map.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/map/map.cpp -o CMakeFiles/s21_containers.dir/containers/map/map.cpp.s
 
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: CMakeFiles/s21_containers.dir/flags.make
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: containers/queue/s21_queue.cpp
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -MF CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -MF CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp
 
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp > CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp > CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.i
 
 CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp -o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/queue/s21_queue.cpp -o CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.s
+
+CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: containers/set/s21_set.cpp
+CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -MF CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp
+
+CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp > CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.i
+
+CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/set/s21_set.cpp -o CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.s
+
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: containers/stack/stack.cpp
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o -MF CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp
+
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp > CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.i
+
+CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/stack/stack.cpp -o CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.s
+
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: containers/vector/vector.cpp
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o -MF CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o.d -o CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp
+
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp > CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.i
+
+CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/containers/vector/vector.cpp -o CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.s
+
+CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: iterators/const_iterator.cpp
+CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o -MF CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o.d -o CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp
+
+CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp > CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.i
+
+CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/iterators/const_iterator.cpp -o CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.s
+
+CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: CMakeFiles/s21_containers.dir/flags.make
+CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: iterators/iterator.cpp
+CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o: CMakeFiles/s21_containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o -MF CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o.d -o CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o -c /Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp
+
+CMakeFiles/s21_containers.dir/iterators/iterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/s21_containers.dir/iterators/iterator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp > CMakeFiles/s21_containers.dir/iterators/iterator.cpp.i
+
+CMakeFiles/s21_containers.dir/iterators/iterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/s21_containers.dir/iterators/iterator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kandice/Desktop/c_plus_plus/containers/iterators/iterator.cpp -o CMakeFiles/s21_containers.dir/iterators/iterator.cpp.s
 
 # Object files for target s21_containers
 s21_containers_OBJECTS = \
-"CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/list/list.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/map/map.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o" \
 "CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o" \
-"CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o"
+"CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o" \
+"CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o" \
+"CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o" \
+"CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o"
 
 # External object files for target s21_containers
 s21_containers_EXTERNAL_OBJECTS =
 
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/list/s21_list.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/map/s21_map.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/stack/s21_stack.cpp.o
-libs21_containers.a: CMakeFiles/s21_containers.dir/containers/vector/s21_vector.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/list/list.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/map/map.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/containers/queue/s21_queue.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/set/s21_set.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/stack/stack.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/containers/vector/vector.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/iterators/const_iterator.cpp.o
+libs21_containers.a: CMakeFiles/s21_containers.dir/iterators/iterator.cpp.o
 libs21_containers.a: CMakeFiles/s21_containers.dir/build.make
 libs21_containers.a: CMakeFiles/s21_containers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libs21_containers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kandice/Desktop/c_plus_plus/containers/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libs21_containers.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/s21_containers.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/s21_containers.dir/link.txt --verbose=$(VERBOSE)
 
